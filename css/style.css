@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'Netflix Sans',Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    src: url(../assets/font/netflix-sans-font/NetflixSans-Regular.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Netflix Sans',Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+    background-color: #000;
+    color: #FFF;
+}
+:root{
+    --theme-color: rgb(229,9,20);
+}
+
+/* ------------------------------ UNIVERSAL-CLASSES ------------------------------ */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.layout{
+    max-width: 61vw;
+    margin: auto;
+}
+.downpage-layout{
+    max-width: 65vw;
+    min-height: auto;
+    margin: auto;
+    padding: 2rem 0;
+
+}
+.font-heading{
+    font-size: 2.9rem;
+    font-weight: 900;
+}
+.font-sub-heading{
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.btn{
+    background-color: var(--theme-color);
+    padding: .4rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FFF;
+    font-weight: 500;
+    font-size: 14px;
+}
+.sub-btn{
+    color: #FFF;
+    background-color: #00000000;
+    margin: 2rem;
+    padding: .4rem 1rem;
+    border-radius: 5px;
+}
+.add-btn{
+    color: #FFF;
+    background-color: #00000076;
+    border: 1px solid #ffffff96;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 1.2rem 1rem;
+    width: 18rem;
+}
+.get-btn{
+    font-size: 1.5rem;
+    padding: .9rem 1rem;
+    margin-left: 5px;
+}
+
+.sepration{
+    height: 8px;
+    background-color: rgb(35,35,35);
+}
+.txt-cen{
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px){
+    .font-heading{
+        font-size: 2.5rem;
+        font-weight: 900;
+    }
+    .font-sub-heading{
+        font-size: 1.3rem;
+        font-weight: 400;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .layout{
+        max-width: 80vw;
+    }
+    .downpage-layout{
+        max-width: 80vw;
+        padding: 5rem 0;
+    }
+    .btn{
+        font-size: 11px;
+    }
+    .sub-btn{
+        margin: 2rem;
+    }
+    .add-btn{
+        font-size: .8rem;
+    }
+    .get-btn{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .font-heading{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .font-sub-heading{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .add-btn{
+        width: 25rem;
+    }
+    .get-btn{
+        margin-top: 1rem;
+    }
+}
+
+/* ------------------------------ HEADER-MAIN ------------------------------ */
+.header-main{
+    background-image: url(../assets/img/bg.jpg);
+    background-position: 50% 64%;
+    background-repeat: no-repeat;
+    background-size: max(1200px,124vw);
+    height: 77vh;
+    position: relative;
+}
+.header-main .box{
+    position: absolute;
+    top: 0;
+    height: 77vh;
+    width: 100%;
+    opacity: .6;
+    background-color: #000;
+}
+.header-main nav{
+    justify-content: space-between;
+    height: 10%;
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+}
+.header-main nav img{
+    filter: hue-rotate(20);
+    width: 9.25rem;
+}
+.header-main nav #selector{
+    background-color: #00000000;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.header-main nav #selector select option{
+    color: #000;
+}
+.header-main #content-header-main{
+    position: relative;
+    z-index: 1;
+    height: 90%;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 30px;
+}
+.header-main #content-header-main #content-header-main-section{
+    flex-direction: column;
+    gap: 10px;
+}
+.header-main #content-header-main #heading,
+.header-main #content-header-main #sub-heading1,
+.header-main #content-header-main #content-header-main-section #sub-heading2{
+    text-align: center;
+}
+.header-main #content-header-main #content-header-main-section #sub-heading2{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2;
+}
+@media screen and (max-width: 1200px){
+    .header-main nav img{
+        width: 7.25rem;
+    }
+}
+@media screen and (max-width: 600px){
+
+}
+
+/* ------------------------------ MAIN ------------------------------ */
+main section .content .font-heading{
+    margin-bottom: 10px;
+}
+main section .media{
+    scale: .9;
+}
+main #section-1 #media-1{
+    position: relative;
+}
+main #section-1 #media-1 img{
+    position: relative;
+}
+main #section-1 #media-1 video{
+    position: absolute;
+    right: 80px;
+    top: 100px;
+    z-index: -1;
+}
+main #section-3 #media-3{
+    position: relative;
+}
+main #section-3 #media-3 img{
+    position: relative;
+}
+main #section-3 #media-3 video{
+    position: absolute;
+    right: 80px;
+    top: 30px;
+    z-index: -1;
+    scale: .8;
+}
+main #faq{
+    padding: 3rem;
+    padding-bottom: 4rem;
+}
+main #faq{
+    flex-direction: column;
+    gap: 20px;
+}
+main #faq h2{
+    font-size: 3rem;
+}
+main #faq #ques #content-box{
+    background-color: #2D2D2D;
+    padding: 1.6rem 1.8rem;
+    margin: 9px;
+    min-width: 58vw;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: background-color .4s;
+}
+main #faq #ques #content-box:hover{
+    background-color: #414141;
+}
+main #faq #ques #content-box svg{
+    scale: 1.66;
+}
+main #faq #ques #content-box svg:hover{
+    transform: rotate(45deg);
+}
+/* main #faq #ques .content-box .content-box-inside{
+    background-color: rgb(35,35,35);
+    padding: 1.5rem;
+    content: hidden;
+} */
+main #faq #content-header-main-section{
+    flex-direction: column;
+    gap: 20px;
+}
+main #faq #content-header-main-section #sub-heading2{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 2;
+}
+main #faq #content-header-main-section #getStarted a{
+    font-size: 24px;
+    padding: 12px 24px;
+}
+
+/* ------------------------------ FOOTER ------------------------------ */
+footer{
+    color: rgba(255,255,255,0.7);
+    max-width: 60vw;
+    min-height: auto;
+    margin: auto;
+    padding: 2rem 0;
+}
+footer > div:first-child{
+    padding: 1rem 0;
+}
+footer  a{
+    color: rgba(255,255,255,0.7);
+}
+footer #foots{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer #foots > a{
+    padding: .5rem 0;
+}
+footer #selector{
+    background-color: #00000000;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+footer #selector select option{
+    color: #000;
+}
+@media (max-width: 1200px){
+    footer #foots{
+        grid-template-columns: 1fr 1fr;
+    }
+}
